@@ -1,0 +1,5 @@
+scala> val map_covet = Map("Cheese" -> 2.0, "Bacon" -> 3.0, "Banana" -> 4.0)
+map_covet: scala.collection.immutable.Map[java.lang.String,Double] = Map(Cheese -> 2.0, Bacon -> 3.0, Banana -> 4.0)
+
+scala> for ((k, v) <- map_covet) yield (k, v*0.9)
+res22: scala.collection.immutable.Map[java.lang.String,Double] = Map(Cheese -> 1.8, Bacon -> 2.7, Banana -> 3.6)
