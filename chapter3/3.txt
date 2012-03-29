@@ -1,3 +1,5 @@
+// Not sure if this is right but I needed to give scala a hint about my anonymous function or whatever they are called
+
 scala> (0 until a.length).map {n: Int => if (n  % 2 == 0) {a(n+1)} else {a(n-1)}}
 res52: scala.collection.immutable.IndexedSeq[Int] = Vector(2, 1, 1, 4, 0, 4)
 
