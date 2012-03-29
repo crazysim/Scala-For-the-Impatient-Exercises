@@ -1,0 +1,5 @@
+scala> (0 until a.length).map {n: Int => if (n  % 2 == 0) {a(n+1)} else {a(n-1)}}
+res52: scala.collection.immutable.IndexedSeq[Int] = Vector(2, 1, 1, 4, 0, 4)
+
+scala> a
+res53: scala.collection.immutable.IndexedSeq[Int] = Vector(1, 2, 4, 1, 4, 0)
