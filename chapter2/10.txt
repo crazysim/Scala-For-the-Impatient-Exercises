@@ -32,4 +32,4 @@ scala> 4/2
 res13: Int = 2
 
 
-// This doesn't work, I don't know why. I think I got the idea anyway. Ugh.
+// This doesn't work, I don't know why. It probably has something to do with integers and division or soemthing. I think I got the idea anyway. Ugh.
