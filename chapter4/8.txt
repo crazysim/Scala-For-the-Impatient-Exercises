@@ -1,0 +1,13 @@
+
+scala> var arint = Array(1,2,3,4,5,42)
+arint: Array[Int] = Array(1, 2, 3, 4, 5, 42)
+
+scala> def minmax(values: Array[Int]) = {
+     | (values.min, values.max)
+     | }
+minmax: (values: Array[Int])(Int, Int)
+
+scala> minmax(arint)
+res27: (Int, Int) = (1,42)
+
+scala> 
