@@ -1,0 +1,17 @@
+scala> val in = new java.util.Scanner(new java.io.File("myfile.txt"))
+in: java.util.Scanner = java.util.Scanner[delimiters=\p{javaWhitespace}+][position=0][match valid=false][need input=false][source closed=false][skipped=false][group separator=\,][decimal separator=\.][positive prefix=][negative prefix=\Q-\E][positive suffix=][negative suffix=][NaN string=\Q?\E][infinity string=\Q?\E]
+
+// The file thing won't accept as a value. so it must be instantiated, for me at least.
+
+scala> val mutemap = scala.collection.mutable.Map[String,Int]()
+
+scala> while (in.hasNext()) {
+     | val w = in.next
+     | mutemap(w) = mutemap.getOrElse
+getOrElse         getOrElseUpdate   
+     | mutemap(w) = mutemap.getOrElse(w,0) + 1
+     | }
+
+scala> for (elem <- mutemap) println(elem._1 + ": " + elem._2)
+
+// and text spews out with counts
