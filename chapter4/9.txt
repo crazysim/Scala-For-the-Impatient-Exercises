@@ -1,0 +1,8 @@
+
+scala> def lteqgt(values: Array[Int], v: Int) = {     
+    | (values.partition(_ < v)._1.length, values.partition(_ == v)._1.length, values.partition(_ > v)._1.length)
+     | }
+ scala> var arint = Array(1,2,3,4,5,42)
+
+scala> lteqgt(arint,3)res29: (Int, Int, Int) = (2,1,3)
+
