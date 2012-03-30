@@ -1,0 +1,16 @@
+scala> import scala.collection.JavaConversions.propertiesAsScalaMap
+
+scala> val props: scala.collection.Map[String, String] = System.getProperties()
+
+scala> var max = 0
+max: Int = 0
+
+scala> for ((k,v) <- props) {
+     | if (k.length > max)
+     | max = k.length
+     | }
+
+scala> max
+res18: Int = 29
+
+scala> for ((k,v) <- props) { printf("%" + -max + "s | %s\n", k, v)}
