@@ -1,0 +1,10 @@
+
+scala> var smap = scala.collection.immutable.SortedMap[String,Int]()
+smap: scala.collection.immutable.SortedMap[String,Int] = Map()
+
+scala> while (in.hasNext()) {
+     | val w = in.next()
+     | smap = smap + (w -> smap.getOrElse(w,0))
+     | }
+
+scala> for (elem <- smap) println(elem._1 + ": " + elem._2)
