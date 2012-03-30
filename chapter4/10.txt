@@ -1,0 +1,4 @@
+scala> "Hello".zip("World")
+res30: scala.collection.immutable.IndexedSeq[(Char, Char)] = Vector((H,W), (e,o), (l,r), (l,l), (o,d))
+
+// Use case: Maybe to see how much two strings are alike?
