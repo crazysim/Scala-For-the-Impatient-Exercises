@@ -1,0 +1,15 @@
+
+scala> import scala.collection.JavaConversions.mapAsScalaMap
+
+scala> val jtmap: scala.collection.mutable.Map[String, Int] = new java.util.TreeMap[String, Int]
+
+scala> val in = new java.util.Scanner(new java.io.File("myfile.txt"))
+
+
+scala> while (in.hasNext()) {
+     | val w = in.next
+     | jtmap(w) = jtmap.getOrElse(w,0) + 1
+     | }
+
+
+scala> for (elem <- jtmap) println(elem._1 + ": " + elem._2)
