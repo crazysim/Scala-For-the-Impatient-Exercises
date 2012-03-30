@@ -1,0 +1,10 @@
+
+// feh, lazy
+scala> val weeklhmap = scala.collection.mutable.LinkedHashMap("Monday" -> java.util.Calendar.MONDAY, "Tuesday" -> java.util.Calendar.TUESDAY, "Wednesday" -> java.util.Calendar.WEDNESDAY, "Thursday" -> java.util.Calendar.THURSDAY)
+
+
+scala> for ((k,v) <- weeklhmap) println(k, v)
+(Monday,2)
+(Tuesday,3)
+(Wednesday,4)
+(Thursday,5)
