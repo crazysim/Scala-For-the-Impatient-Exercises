@@ -1,0 +1,11 @@
+
+scala> val in = new java.util.Scanner(new java.io.File("myfile.txt"))
+
+scala> var imap = Map[String,Int]()
+
+scala> while (in.hasNext()) {
+     | val w = in.next()
+     | imap = imap + (w -> imap.getOrElse(w,0))
+     | }
+
+scala> for (elem <- imap) println(elem._1 + ": " + elem._2)
